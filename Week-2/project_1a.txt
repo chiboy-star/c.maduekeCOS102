@@ -1,0 +1,17 @@
+Project 1A: Pseudocode for Store Checkout
+
+BEGIN
+  DISPLAY "Welcome to Checkout"
+  INPUT item prices and quantities
+  CALCULATE subtotal = sum of (price * quantity for each item)
+  APPLY tax and discounts if applicable
+  COMPUTE total amount
+  DISPLAY total amount
+  INPUT payment amount
+  CALCULATE change = payment - total amount
+  IF change >= 0 THEN
+    DISPLAY "Transaction Successful! Change: ", change
+  ELSE
+    DISPLAY "Insufficient Funds"
+  ENDIF
+END
