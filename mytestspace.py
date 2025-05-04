@@ -1,50 +1,16 @@
+import pandas as pd
 
-'''
-s = 'python'
-output = ''
-for i in range(-1,-len(s)-1,-2):
-    output += s[i]
-print(output)
+# Read the CSV file
+data = pd.read_csv("programming language trend over time.csv")
 
-text = "looping"
-result = ""
-for i in range(len(text)):
-    if i in (1,3,5):
-        continue
-    result += text[i]
-print(result)
+# 1. Display the first 7 rows of the dataset
+print("First 7 rows of the dataset:")
+print(data.head(7))
 
-def mystery(lst):
-    temp = []
-    for i in range(len(lst)):
-        if lst[i] not in temp:
-            temp.append(lst[i])
-        else:
-            temp.remove(lst[i])
-    return temp
+# 2. Select and display the first 3 columns of the dataset
+print("\nFirst 3 columns of the dataset:")
+print(data.iloc[:, :3])
 
-numbers = [1,2,2,3,1,4,4]
-print(mystery(numbers))
-'''
-'''
-data = [1,2,3,4,5,6]
-i = 0
-while i < len(data):
-    if data[i] % 3 == 0:
-        data.insert(i+1,data[i]*2)
-        i+=2
-    else:
-        i += 1
-print(data)
-
-
-text = 'mississippi'
-output = ''
-for i in range(len(text)):
-    if i % 2 == 0:
-        continue
-    if text[i] in output:
-        break
-    output += text[i]
-
-print(output)'''
+# 3. Display only the first row and the header
+print("\nFirst row (with headers):")
+print(data.head(1))
