@@ -1,6 +1,6 @@
 import tkinter as tk 
 from tkinter import messagebox
-from PIL import Image, ImageTk  # This is unused currently, can be removed if not needed
+#from PIL import Image, ImageTk  # This is unused currently, can be removed if not needed
 
 def welcomeMessage(username):
     window = tk.Toplevel(root)
